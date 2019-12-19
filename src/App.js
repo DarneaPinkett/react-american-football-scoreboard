@@ -1,5 +1,4 @@
 //TODO: STEP 1 - Import the useState hook.
-import React from "react";
 import React, {useState} from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
@@ -7,14 +6,10 @@ import BottomRow from "./BottomRow";
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
 
-console.log(useState)
-console.log(homeScore)
-console.log(setHomeScore)
-console.log(awayScore)
-console.log(setAwayScore)
 
-  const [home, setHome] = useState(0);
-  const [away, setAway] = useState(0);
+
+  const [homeScore, setHomeScore] = useState(0);
+  const [awayScore, setAwayScore] = useState(0);
 
   const homeTouchdown = () => {
     setHomeScore(homeScore + 7);
